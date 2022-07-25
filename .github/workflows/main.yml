@@ -25,3 +25,5 @@ jobs:
         run: |
           npm i pnpm -g
           pnpm i  
+          pnpm start
+          curl 'http://localhost:3333/post'
