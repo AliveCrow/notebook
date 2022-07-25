@@ -22,6 +22,6 @@ jobs:
           node-version: "18.2.0"
 
       - name: Setup Express environment
-        run:
+        run: |
           pnpm i
           pnpm start
