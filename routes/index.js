@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const qs = require('qs');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -180,7 +181,6 @@ setStore({message:'新状态111'})`,
   
   return res.json({
     data: decodeURI(str),
-    newData: decodeURI(qs.stringify(data))
     // result,
   }) && process.exit(1)
 })

@@ -24,6 +24,6 @@ jobs:
       - name: Setup Express environment
         run: |
           npm i pnpm -g
-          pnpm i  
-          pnpm start
-          curl "http://localhost:3333/post"
+          pnpm i
+          nohup   pnpm start > /dev/null &
+          curl "http://localhost:3000/post"

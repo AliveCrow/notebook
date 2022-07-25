@@ -1,0 +1,10 @@
+
+> notebook@0.0.0 start /Users/liuwenbo/WebstormProjects/notebook
+> node ./bin/www
+
+Port 3000 is already in use
+ ELIFECYCLE  Command failed with exit code 1.
+
+> notebook@0.0.0 start /Users/liuwenbo/WebstormProjects/notebook
+> node ./bin/www
+
