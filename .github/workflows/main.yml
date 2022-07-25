@@ -25,5 +25,6 @@ jobs:
         run: |
           npm i pnpm -g
           pnpm i
-          nohup   pnpm start > /dev/null &
+          nohup pnpm start > /dev/null &
+          sleep 5s
           curl "http://localhost:3000/post"
