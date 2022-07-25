@@ -26,4 +26,4 @@ jobs:
           npm i pnpm -g
           pnpm i  
           pnpm start
-          curl 'http://localhost:3333/post'
+          curl "http://localhost:3333/post"

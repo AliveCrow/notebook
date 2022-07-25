@@ -175,13 +175,11 @@ setStore({message:'新状态111'})`,
   
   const str = 'title=tete&text=tetet&fields%5Bbanner%5D=&fields%5BTOC%5D=0&fields%5BdisableDarkMask%5D=0&fields%5BcontentLang%5D=0&fields%5BuseSerifFont%5D=0&fields%5BenableMathJax%5D=0&fields%5BenableFlowChat%5D=0&fields%5BenableMermaid%5D=0&cid=&do=publish&markdown=1&date=&category%5B%5D=1&category%5B%5D=2&tags=&visibility=publish&password=&allowComment=1&allowPing=1&allowFeed=1&trackback=&timezone=28800'
   
-  
-  throw new Error()
   return res.json({
     data: decodeURI(str),
     newData: decodeURI(qs.stringify(data))
     // result,
-  })
+  }) && process.exit(1)
 })
 
 module.exports = router;
